@@ -12,4 +12,8 @@ To run application:
 npm run dev
 ```
 
-to bui
+to build: 
+
+```bash
+npm run build
+```
