@@ -14,7 +14,7 @@ export const Navber = () => {
   const mappedRoutes = useMemo(() => {
     return routes.map(({ link, label }) => {
       return (
-        <Link href={link} key={label}>
+        <Link href={link} key={label} className="hover:text-primary">
           <li>{label}</li>
         </Link>
       );
