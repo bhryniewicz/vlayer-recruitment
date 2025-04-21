@@ -8,7 +8,7 @@ import { PropertyCard } from "../ui/property-card";
 
 export const HeroSection = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 h-[100vh] md:h-[90vh] pt-8 md:pt-0">
+    <section className="grid grid-cols-1 md:grid-cols-2 min-h-[100vh] md:h-[90vh] pt-8 md:pt-0">
       <motion.div
         initial="initial"
         whileInView="inView"
