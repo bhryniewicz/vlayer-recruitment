@@ -47,10 +47,10 @@ export const HeroSection = () => {
       </motion.div>
 
       <div className="flex relative flex-col justify-center h-[40vh] md:h-full bg-[url('/heroSectionApartment.png')] bg-cover bg-center m-8 md:m-0">
-        <div className="absolute top-0 -left-[30%] md:left-0 md:top-[30%] md:-ml-16">
+        <div className="absolute top-0 md:top-[30%] -ml-20 sm:-ml-8 md:-ml-12">
           <PropertyCard
             {...heroPropertyCard}
-            className="scale-50 md:scale-100"
+            className="scale-50 sm:scale-75 lg:scale-100 2xl:scale-150"
           />
         </div>
       </div>

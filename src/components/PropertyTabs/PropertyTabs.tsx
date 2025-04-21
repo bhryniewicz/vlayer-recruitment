@@ -64,7 +64,7 @@ export const PropertyTabs = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="flex justify-start md:justify-center gap-6 overflow-x-auto scrollbar-hide w-full snap-x snap-mandatory px-8 pb-4 md:pb-8 [scroll-padding-inline:2rem] md:[scroll-padding-inline:0]"
+          className="flex flex-nowrap md:flex-wrap justify-start md:justify-center gap-6 overflow-x-auto md:overflow-visible scrollbar-hide w-full snap-x snap-mandatory sm:snap-none px-8 pb-4 md:pb-8 [scroll-padding-inline:2rem] sm:[scroll-padding-inline:0]"
         >
           {activeTab.map((property) => (
             <li
