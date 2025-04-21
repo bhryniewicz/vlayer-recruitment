@@ -36,7 +36,12 @@ export const HeroSection = () => {
             your properties without any commissions.
           </span>
         </motion.p>
-        <div className="w-[50%] shadow-[0_0_600px_200px_rgba(139,138,255,0.20)]" />
+        <div
+          className="w-[50%]"
+          style={{
+            boxShadow: "0 0 600px 200px rgba(139,138,255,0.2)",
+          }}
+        />
         <motion.div
           variants={itemVariant}
           className="flex justify-center md:justify-start gap-6"
@@ -52,7 +57,7 @@ export const HeroSection = () => {
             {...heroPropertyCard}
             className="scale-50 sm:scale-75 lg:scale-100 2xl:scale-125"
           />
-    </div>
+        </div>
       </div>
     </section>
   );
