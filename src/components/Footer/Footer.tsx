@@ -28,7 +28,7 @@ export const Footer = () => {
           ©2021 Estatery. All rights reserved
         </small>
         <ul className="flex gap-10">
-          {icons.map((icon, index) => {
+          {icons.map((icon) => {
             return (
               <li key={crypto.randomUUID()}>
                 <Image src={icon} alt="icon" width={24} height={24} />

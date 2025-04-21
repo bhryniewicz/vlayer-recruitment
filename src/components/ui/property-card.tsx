@@ -3,10 +3,10 @@
 import { cn } from "@/lib/utils";
 import { formatNumberWithCommas } from "@/utils/formatNumber";
 import Image from "next/image";
-import { FC, useState } from "react";
+import { FC } from "react";
 import { TagIcon } from "@/assets/icons";
 import { Property } from "@/types/property";
-import { HeartIcon } from "lucide-react";
+import { AddToFavouriteButton } from "./add-to-favourite";
 
 interface PropertyCardProps extends Property {
   className?: string;
@@ -28,6 +28,7 @@ export const PropertyCard: FC<PropertyCardProps> = (property) => {
           src={image}
           fill
           alt="apartment image"
+          placeholder="blur"
           sizes="(max-width: 768px) 100%, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
@@ -51,26 +52,5 @@ export const PropertyCard: FC<PropertyCardProps> = (property) => {
         </address>
       </div>
     </article>
-  );
-};
-
-const AddToFavouriteButton = () => {
-  const [isFavourite, setIsFavourite] = useState<boolean>(false);
-
-  return (
-    <button
-      className={cn(
-        "flex justify-center items-center h-12 w-12 border border-[#EAECF4] rounded-full absolute top-[20px] right-[20px] hover:border-secondary hover:shadow-lg focus:bg-secondary focus:border-primary-dark",
-        isFavourite ? "bg-primary" : "bg-white"
-      )}
-      onClick={() => setIsFavourite((p) => !p)}
-    >
-      <HeartIcon
-        className={cn(
-          `w-6 h-6 transition-colors duration-200`,
-          isFavourite ? "text-white" : "text-primary-dark "
-        )}
-      />
-    </button>
   );
 };

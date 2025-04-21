@@ -88,8 +88,6 @@ export const Testimonials = () => {
           </li>
         ))}
       </ul>
-
-      {/* Decorative gradient */}
       <div className="absolute inset-0 pointer-events-none opacity-20 bg-[linear-gradient(to_top,rgba(139,138,255,0.8)_10%,transparent_60%)]" />
     </motion.section>
   );
