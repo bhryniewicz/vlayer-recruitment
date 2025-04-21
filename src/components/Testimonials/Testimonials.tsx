@@ -11,7 +11,7 @@ import {
 } from "@/lib/framerAnimationVariants";
 
 export const Testimonials = () => {
-  const { fullName, peopleImages, text, role, activeTestimonialIndex } =
+  const { fullName, peopleImages, testimonial, role, activeTestimonialIndex } =
     useTestimonials();
 
   return (
@@ -42,9 +42,9 @@ export const Testimonials = () => {
           initial="initial"
           animate="animate"
           exit="exit"
-          className="text-xl max-w-[700px]"
+          className="text-xl max-w-[700px] min-h-[160px] sm:min-h-0"
         >
-          "{text}"
+          "{testimonial}"
         </motion.blockquote>
       </AnimatePresence>
       <AnimatePresence mode="wait">

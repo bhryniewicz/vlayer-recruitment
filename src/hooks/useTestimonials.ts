@@ -11,7 +11,11 @@ export const useTestimonials = () => {
     });
   }, []);
 
-  const { fullName, role, text } = testimonials[activeTestimonialIndex];
+  const {
+    fullName,
+    role,
+    text: testimonial,
+  } = testimonials[activeTestimonialIndex];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,7 +29,7 @@ export const useTestimonials = () => {
     peopleImages,
     fullName,
     role,
-    text,
+    testimonial,
     activeTestimonialIndex,
   };
 };

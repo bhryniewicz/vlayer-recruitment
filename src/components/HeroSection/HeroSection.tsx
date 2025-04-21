@@ -52,7 +52,7 @@ export const HeroSection = () => {
             {...heroPropertyCard}
             className="scale-50 sm:scale-75 lg:scale-100 2xl:scale-125"
           />
-        </div>
+    </div>
       </div>
     </section>
   );
