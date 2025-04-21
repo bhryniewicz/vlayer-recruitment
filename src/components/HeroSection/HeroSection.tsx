@@ -50,7 +50,7 @@ export const HeroSection = () => {
         <div className="absolute top-0 md:top-[30%] -ml-20 sm:-ml-8 md:-ml-12">
           <PropertyCard
             {...heroPropertyCard}
-            className="scale-50 sm:scale-75 lg:scale-100 2xl:scale-150"
+            className="scale-50 sm:scale-75 lg:scale-100 2xl:scale-125"
           />
         </div>
       </div>
