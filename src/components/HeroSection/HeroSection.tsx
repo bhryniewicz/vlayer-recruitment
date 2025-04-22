@@ -39,7 +39,7 @@ export const HeroSection = () => {
         <div
           className="w-[50%]"
           style={{
-            boxShadow: "0 0 600px 200px rgba(139,138,255,0.2)",
+            boxShadow: "0 0 200px 200px rgba(139,138,255,0.2)",
           }}
         />
         <motion.div
