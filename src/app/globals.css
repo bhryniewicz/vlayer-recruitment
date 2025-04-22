@@ -138,3 +138,11 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.hero-shadow {
+  box-shadow: 0 0 200px 200px rgba(139, 138, 255, 0.2);
+  -webkit-box-shadow: 0 0 200px 200px rgba(139, 138, 255, 0.2);
+  -moz-box-shadow: 0 0 200px 200px rgba(139, 138, 255, 0.2);
+  -webkit-appearance: none;
+  appearance: none;
+}

@@ -36,12 +36,7 @@ export const HeroSection = () => {
             your properties without any commissions.
           </span>
         </motion.p>
-        <div
-          className="w-[50%]"
-          style={{
-            boxShadow: "0 0 200px 200px rgba(139,138,255,0.2)",
-          }}
-        />
+        <div className="w-[50%] hero-shadow" />
         <motion.div
           variants={itemVariant}
           className="flex justify-center md:justify-start gap-6"
